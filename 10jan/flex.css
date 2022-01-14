@@ -1,0 +1,85 @@
+body{
+    margin: 20px;
+}
+header{
+    background-color: rgb(243, 206, 60);
+    height: 40px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-flow: row;
+}
+.content{
+    background-color: rgb(250, 90, 116);
+    height: 200px;
+    width: 30%;
+    text-align: center;
+}
+.center{
+    background-color: rgb(9, 240, 221);
+    height: 200px;
+}
+.data{
+    background-color: rgb(250, 90, 116);
+    height: 200px;
+    width: 30%;
+    text-align: center;
+}
+@media (max-width:600px){
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .content{
+        background-color: rgb(250, 90, 116);
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .center{
+        background-color: rgb(9, 240, 221);
+        height: 200px;
+        order: 1;
+        overflow: scroll;
+    }
+    .data{
+        background-color: rgb(250, 90, 116);
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+}
+@media (max-width:800px){
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .content{
+        background-color: rgb(250, 90, 116);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 2;
+    }
+    .center{
+        background-color: rgb(9, 240, 221);
+        height: 200px;
+        order: 1;
+    }
+    .data{
+        background-color: rgb(250, 90, 116);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 3;
+    }
+}
+footer{
+    margin-top: -19px;
+    background-color: rgba(165, 42, 42, 0.856);
+    height: 40px;
+    text-align: center;
+}
